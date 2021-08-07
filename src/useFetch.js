@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_API_KEY}`
 
 const useFetch = ( urlParams ) => {
-    const  [ isLoading, setIsLoading ] = useState( true )
+    const [ isLoading, setIsLoading ] = useState( true )
     const [ error, setError ] = useState({ show: false, msg: '' })
     const [ data, setData ] = useState( null )
     
@@ -15,11 +15,11 @@ const useFetch = ( urlParams ) => {
           const data = await response.json()
         
           if ( data.Response === 'True' ) {
-            {/* data.Search has search results with a movie list and  data is an obj with a single movie */}
             setData( data.Search || data )
             setError({ show: false, msg: '' })
           } 
-          else {
+          
+          if ( data.Response === 'False' ) {
             setError({ show: true, msg: data.Error })
           }
     

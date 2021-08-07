@@ -1,21 +1,29 @@
 import React from 'react'
-import { useGlobalContext } from './context'
 import { Link } from 'react-router-dom'
 import npa from './assets/images/npa.jpg'
 import styled from 'styled-components'
-
+import { useGlobalContext } from './context'
 
 const Movies = () => {
   const { movies, isLoading } = useGlobalContext()
 
   if ( isLoading ) {
-    return <div className='loading'></div>
+    return (
+      <Section className="movies">
+        <div className='loading'></div>
+      </Section>
+    )
   }
 
   return (
     <Section className="movies">
       { movies.map( movie => {
-        const { imdbID: id, Poster: poster, Title: title, Year: year } = movie
+        const { 
+          imdbID: id, 
+          Poster: poster, 
+          Title: title,
+          Year: year,
+        } = movie
         
         return (
           <Link to={ `/movies/${ id }`  } key={ id } className="movie">
@@ -37,7 +45,7 @@ const Section = styled.section`
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax( 28rem, 1fr ));
   padding: 2rem;
-  max-width: 132rem;
+  max-width: var(--max-width);
   grid-gap: 4rem;
   margin: auto;
   width: 90vw;
@@ -45,7 +53,7 @@ const Section = styled.section`
   gap: 2rem;
   margin: 0 auto;
   padding-bottom: 5rem;
-  background-color: #131313;
+  background-color: var(--color-psi);
   z-index: 10;
   position: relative;
   border-radius: var(--radius-beta);
@@ -57,6 +65,7 @@ const Section = styled.section`
     border-radius: 1rem;
     height: 100%;
   }
+  
   article img {
     width: 100%;
     height: 400px;
