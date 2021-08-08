@@ -7,7 +7,7 @@ const SearchForm = () => {
   const { query, setQuery, error } = useGlobalContext()
 
   return (
-    <Form bgImage={ bgImage } onSubmit={(e) => e.preventDefault()}>
+    <Form bgImage={ bgImage } onSubmit={ e => e.preventDefault() }>
       <Overlay>
         <h2>Movienation</h2>
         <div>
@@ -15,7 +15,7 @@ const SearchForm = () => {
           <input 
             type="text" 
             value={ query } 
-            onChange={ (e) => setQuery( e.target.value )} 
+            onChange={ e => setQuery( e.target.value )} 
           />
         </div>
         { error.show && <Error>{ error.msg }</Error> }
