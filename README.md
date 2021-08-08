@@ -1,6 +1,6 @@
 # Movienation
 
-Search movies by name. Visit the [live site](movienation.netlify.app)
+Search movies by name. Visit the [live site](https://movienation.netlify.app/)
 
 ![Home Image](https://github.com/leanug/movienation/blob/main/src/assets/images/screenshot.png)
 
