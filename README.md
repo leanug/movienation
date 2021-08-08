@@ -22,5 +22,3 @@ Search movies by name. Visit the [live site](https://movienation.netlify.app/)
 ## Build
 
 	npm run build
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/572406e6-b53d-45cd-90fb-6f659b09eeb6/deploy-status)](https://app.netlify.com/sites/movienation/deploys)
