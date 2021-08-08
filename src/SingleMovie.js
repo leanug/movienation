@@ -1,7 +1,6 @@
 import React from 'react'
 import npa from './assets/images/npa.jpg'
 import styled from 'styled-components'
-import { API_ENDPOINT } from './context'
 import useFetch from './useFetch'
 import { useParams, Link } from 'react-router-dom'
 

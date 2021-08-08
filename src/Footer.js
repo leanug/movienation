@@ -13,7 +13,7 @@ const Footer = () => {
 
 const Wrapper = styled.footer`
     background-color: var(--color-psi);
-    padding: 0 2rem;
+    padding: 0 2rem 0.5rem 2rem;
     text-align: center;
 `
 
