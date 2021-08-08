@@ -1,4 +1,5 @@
 import React from 'react'
+import { API_ENDPOINT } from './context'
 import npa from './assets/images/npa.jpg'
 import styled from 'styled-components'
 import useFetch from './useFetch'
