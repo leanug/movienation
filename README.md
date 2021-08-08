@@ -1,6 +1,6 @@
 # Movienation
 
-Search movies by name.
+Search movies by name. Visit the [live site](movienation.netlify.app)
 
 ![Home Image](https://github.com/leanug/movienation/blob/main/src/assets/images/screenshot.png)
 
@@ -18,3 +18,7 @@ Search movies by name.
 ## Run
 
 	npm start
+
+## Build
+
+	npm run build

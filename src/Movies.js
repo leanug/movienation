@@ -42,46 +42,46 @@ const Movies = () => {
 }
 
 const Section = styled.section`
-  display: grid;
-  grid-template-columns: repeat( auto-fit, minmax( 28rem, 1fr ));
-  padding: 2rem;
-  max-width: var(--max-width);
-  grid-gap: 4rem;
-  margin: auto;
-  width: 90vw;
-  display: grid;
-  gap: 2rem;
-  margin: 0 auto;
-  padding-bottom: 5rem;
-  background-color: var(--color-psi);
-  z-index: 10;
-  position: relative;
-  border-radius: var(--radius-beta);
-  margin-top: -8rem;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax( 28rem, 1fr ));
+    padding: 2rem;
+    max-width: var(--max-width);
+    grid-gap: 4rem;
+    margin: auto;
+    width: 90vw;
+    display: grid;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    background-color: var(--color-psi);
+    z-index: 10;
+    position: relative;
+    border-radius: var(--radius-beta);
+    margin-top: -8rem;
 
   article {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem;
-    height: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      height: 100%;
   }
-  
+
   article img {
-    width: 100%;
-    height: 400px;
-    display: block;
-    object-fit: cover;
+      width: 100%;
+      height: 400px;
+      display: block;
+      object-fit: cover;
   }
 
   .movie-info {
-    background-color: #1A1A1A;
-    padding: 2rem;
-    height: 100%;
-    width: 100%;
+      background-color: #1A1A1A;
+      padding: 2rem;
+      height: 100%;
+      width: 100%;
   }
 
   h4 {
-    font-weight: 500;
+      font-weight: 500;
   }
 `
 
